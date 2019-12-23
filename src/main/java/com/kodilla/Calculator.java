@@ -3,7 +3,12 @@ class SimpleSubstract
 {
     public double substractBFromA(double a, double b) {
 
-        return a * b;
+        return b - a;
+    }
+
+    public double summBtoA(double a, double b) {
+
+        return b + a;
     }
 }
 
@@ -13,8 +18,10 @@ class Aplication
 
         SimpleSubstract calculator = new SimpleSubstract();
 
-        double result = calculator.substractBFromA(16, 2);
+        double resultSubstract = calculator.substractBFromA(16, 2);
+        double resultSumm = calculator.summBtoA(15,5);
 
-        System.out.println(result);
+        System.out.println("Subtraction result B to A = " + resultSubstract);
+        System.out.println("Result of adding B to A = " + resultSumm);
     }
 }
